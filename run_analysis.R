@@ -1,22 +1,22 @@
 library(dplyr)
-############## Load data sets ############## 
+############## Load datasets ############## 
 ft <- read.table("./UCI HAR Dataset/features.txt", 
                  header = FALSE, col.names = c("idx", "features"))
-# Load test data sets
+# Load test datasets
 x_test <- read.table("./UCI HAR Dataset/test/X_test.txt", header = FALSE
                      , col.names = ft[,2])
 y_test <- read.table("./UCI HAR Dataset/test/y_test.txt", header = FALSE
                      , col.names = c("label"))
 subject_test <- read.table("./UCI HAR Dataset/test/subject_test.txt", 
                            header = FALSE, col.names = c("subject"))
-## Load train data sets
+## Load train datasets
 x_train <- read.table("./UCI HAR Dataset/train/X_train.txt", header = FALSE
                       , col.names = ft[,2])
 y_train <- read.table("./UCI HAR Dataset/train/y_train.txt", header = FALSE
                       , col.names = c("label"))
 subject_train <- read.table("./UCI HAR Dataset/train/subject_train.txt", 
                            header = FALSE, col.names = c("subject"))
-## Load activity labels data set
+## Load activity labels dataset
 act_label <- read.table("./UCI HAR Dataset/activity_labels.txt", header = FALSE
                         , col.names = c("class","activity"))
 
