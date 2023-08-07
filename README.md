@@ -1,5 +1,5 @@
 # Course project description
-The following steps are description of 'run_analysis.R' which is the final course project.
+The following steps are the description of `run_analysis.R` which is the final project of this course.
 
 1. Starting with loading the library which is `dplyr` library.
 2. Load datasets into variables that we are gonna use with `read.table()` (It's assume that the path to datasets folder `"./UCI HAR Dataset"` has been created in this working directory).
